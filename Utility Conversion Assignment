@@ -1,0 +1,36 @@
+"""---------------------------------------------------
+Assignment is to code a utility that aids in unit conversion. The software should individually prompt user to input four 
+separate lengths, each specified in inches. Following this, the program should convert these lengths and present the results
+in a table, showing their equivalents in yars, feet, and centimeters. The table should be formatted into four columns, and 
+the values for yards, feet and centimeters should be rounded to two decimal places. 
+"""
+#ask user for input
+print(end="\n")
+print('Welcome to Lopezz Solar Solutions, Inc. Cost Conversion Utility!')
+print(end="\n")
+firstValue = float(input('Please enter the first value in inches: '))
+secondValue = float(input('Please enter the second value in inches: '))
+thirdValue = float(input('Please enter the third value in inches: '))
+fourthValue = float(input('Please enter the fourth value in inches: '))
+
+print(end="\n")
+print('Here are the conversions:')
+
+print(end="\n")
+print('Input(in)','Yards','  Feet','  Cm', sep='     ', end="\n")
+
+#Conversions
+#yards = float(0.0277778)
+#feet  = float(0.0833333)
+#centi = float(2.54)
+
+#for loop
+for i in [firstValue, secondValue, thirdValue, fourthValue]:
+  userInput = 1 * i
+  outYards = float(0.0277778) * i
+  outFeet  = float(0.0833333) * i
+  outCenti = float(2.54) * i
+  print(f'{userInput:^,.2f}\t{outYards:10,.2f}\t{outFeet:10,.2f}\t{outCenti:10,.2f}')  
+  
+print(end="\n")
+print('Thank you for using Lopez Solar Solutions, Inc. Conversion Utility!')
