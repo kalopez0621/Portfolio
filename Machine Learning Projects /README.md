@@ -1,0 +1,2 @@
+# Handwritten Digit Recognition
+### The objective of this project was to develop a machine-learning system capable of accurately recognizing and classifying handwritten digits. The dataset was provided by the U.S. Postal Service and curated by AT&T research labs. It consists of 7,291 training images and 2,007 test images, each a 16 x 16 pixel grayscale representation of a handwritten digit. The images have been preprocessed for size normalization and centering, offering a standardized dataset that is similar to real-world variations in handwriting.
